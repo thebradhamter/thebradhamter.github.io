@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0%;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+    color: lightgray;
+}
+
+.projectCards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projectCard img {
+    width: 40px;
+    height: 40px;
+}
+
+.projectCard {
+    display: flex;          /* image + text wrapper side by side */
+    align-items: center;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.projectText p {
+    margin: 0;               /* remove default paragraph spacing */
+}
+
+.projectText {
+    text-decoration: none;
+}
