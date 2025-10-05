@@ -2,8 +2,11 @@ const usernamesText = document.getElementById("usernamesText");
 const usernames = document.getElementById("usernames");
 const projectsText = document.getElementById("projectsText");
 const projectCards = document.getElementById("projectCards");
+const profilesText = document.getElementById("profilesText");
+const profileCards = document.getElementById("profileCards");
 let usernamesHidden = true;
 let projectsHidden = false;
+let profilesHidden = false;
 
 usernamesText.addEventListener("click", () => {
     usernamesHidden = !usernamesHidden;
@@ -25,4 +28,16 @@ projectsText.addEventListener("click", () => {
     }
 });
 
+profilesText.addEventListener("click", () => {
+    profilesHidden = !profilesHidden;
+    profileCards.style.display = profilesHidden ? "none" : "flex";
+    if (profilesHidden) {
+        profilesText.innerHTML = "Profiles ↓";
+    } else {
+        profilesText.innerHTML = "Profiles ↑";
+    }
+});
+
+usernames.hidden = true;
 projectCards.hidden = false;
+profileCards.hidden = true;
